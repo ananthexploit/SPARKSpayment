@@ -115,7 +115,7 @@ app.post("/callback", (req, res) => {
 
            var _result = JSON.parse(response);
              if(_result.STATUS == 'TXN_SUCCESS') {
-                 res.send('<h1>PAYMENT SUCCESS! GOD BLESS YOU!</h1>')
+                 res.sendFile('paymentsuccess.html')
              }else {
                  res.send('payment failed')
              }
